@@ -29,11 +29,11 @@
         android:inputType="number"
         android:textColor="@color/black"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/heightTitle"
+        app:layout_constraintEnd_toStartOf="@+id/heightUnit"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/heightTitle"
+        app:layout_constraintTop_toTopOf="@+id/heightTitle" />
 
     <EditText
         android:id="@+id/et_weight"
@@ -44,11 +44,11 @@
         android:inputType="number"
         android:textColor="@color/black"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/weightTitle"
+        app:layout_constraintEnd_toStartOf="@+id/weightUnit"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/weightTitle"
+        app:layout_constraintTop_toTopOf="@+id/weightTitle" />
 
     <Button
         android:id="@+id/btn_check"
@@ -58,10 +58,10 @@
         android:text="확인하러 가기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/weightTitle" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/heightTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_main_title" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/weightTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_height" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/heightUnit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toTopOf="@+id/et_height" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/weightUnit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

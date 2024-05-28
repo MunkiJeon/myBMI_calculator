@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -19,13 +20,26 @@ class MainActivity : AppCompatActivity() {
         var heightEditText =  findViewById<EditText>(R.id.et_height)
         var weightEditText =  findViewById<EditText>(R.id.et_weight)
         var submitButton = findViewById<Button>(R.id.btn_check)
+        var heightTitle = findViewById<TextView>(R.id.heightTitle)
+        var weightTitle = findViewById<TextView>(R.id.weightTitle)
+        var heightUnit = findViewById<TextView>(R.id.heightUnit)
+        var weightUnit = findViewById<TextView>(R.id.weightUnit)
+
         val nightModeFlags =
             getResources().configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
 
         when (nightModeFlags) {
             Configuration.UI_MODE_NIGHT_YES -> {
                 heightEditText.setTextColor(Color.WHITE)
+                heightEditText.setBackgroundColor(Color.DKGRAY)
+                heightTitle.setTextColor(Color.WHITE)
+                heightUnit.setTextColor(Color.WHITE)
+
                 weightEditText.setTextColor(Color.WHITE)
+                weightEditText.setBackgroundColor(Color.DKGRAY)
+                weightTitle.setTextColor(Color.WHITE)
+                weightUnit.setTextColor(Color.WHITE)
+
                 submitButton.setTextColor(Color.BLACK)
             } // 다크 모드
             Configuration.UI_MODE_NIGHT_NO -> {
