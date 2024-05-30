@@ -36,7 +36,7 @@ class ResultActivity : AppCompatActivity() {
         } else if (value in 23.0 ..25.0){
             resText ="과체중"
             resImge = R.drawable.img_lv3
-            resColor = Color.BLACK
+            resColor = Color.DKGRAY
         } else if (value in 25.0 ..30.0){
             resText ="경도 비만"
             resImge = R.drawable.img_lv4
